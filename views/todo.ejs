@@ -16,10 +16,12 @@
             <button type="submit">Add item</button>
         </form>
         <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
+            <% for(let i = 0; i < todos.length; i++){ %>
+                <li> <%= todos[i].item %></li>
+            <% } %> 
         </ul>
+
+        <script src="/assets/todo-list.js"></script>
     </div>
 </body>
 </html>
